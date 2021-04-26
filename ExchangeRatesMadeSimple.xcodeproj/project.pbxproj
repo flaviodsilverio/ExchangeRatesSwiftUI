@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B12DD9226368B8400CA63E0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12DD9126368B8400CA63E0 /* MainView.swift */; };
+		1B12DD9D26368C7F00CA63E0 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12DD9C26368C7F00CA63E0 /* HistoryView.swift */; };
+		1B12DDA326368CA400CA63E0 /* Tabbable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12DDA226368CA400CA63E0 /* Tabbable.swift */; };
+		1B1E9566263693B000214002 /* ConversionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E9565263693B000214002 /* ConversionItem.swift */; };
+		1B453F982631EAB8007D341D /* ExchangeRatesMadeSimpleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B453F972631EAB8007D341D /* ExchangeRatesMadeSimpleApp.swift */; };
+		1B453F9A2631EAB8007D341D /* ConvertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B453F992631EAB8007D341D /* ConvertView.swift */; };
+		1B453F9C2631EABB007D341D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B453F9B2631EABB007D341D /* Assets.xcassets */; };
+		1B453F9F2631EABB007D341D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B453F9E2631EABB007D341D /* Preview Assets.xcassets */; };
+		1B453FA12631EABB007D341D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B453FA02631EABB007D341D /* Persistence.swift */; };
+		1B453FA42631EABB007D341D /* ExchangeRatesMadeSimple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B453FA22631EABB007D341D /* ExchangeRatesMadeSimple.xcdatamodeld */; };
+		1B453FAF2631EABB007D341D /* ExchangeRatesMadeSimpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B453FAE2631EABB007D341D /* ExchangeRatesMadeSimpleTests.swift */; };
+		1B453FBA2631EABB007D341D /* ExchangeRatesMadeSimpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B453FB92631EABB007D341D /* ExchangeRatesMadeSimpleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B453FAB2631EABB007D341D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B453F8C2631EAB8007D341D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B453F932631EAB8007D341D;
+			remoteInfo = ExchangeRatesMadeSimple;
+		};
+		1B453FB62631EABB007D341D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B453F8C2631EAB8007D341D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B453F932631EAB8007D341D;
+			remoteInfo = ExchangeRatesMadeSimple;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B12DD9126368B8400CA63E0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1B12DD9C26368C7F00CA63E0 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		1B12DDA226368CA400CA63E0 /* Tabbable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbable.swift; sourceTree = "<group>"; };
+		1B1E9565263693B000214002 /* ConversionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionItem.swift; sourceTree = "<group>"; };
+		1B453F942631EAB8007D341D /* ExchangeRatesMadeSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRatesMadeSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B453F972631EAB8007D341D /* ExchangeRatesMadeSimpleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesMadeSimpleApp.swift; sourceTree = "<group>"; };
+		1B453F992631EAB8007D341D /* ConvertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertView.swift; sourceTree = "<group>"; };
+		1B453F9B2631EABB007D341D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B453F9E2631EABB007D341D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1B453FA02631EABB007D341D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		1B453FA32631EABB007D341D /* ExchangeRatesMadeSimple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExchangeRatesMadeSimple.xcdatamodel; sourceTree = "<group>"; };
+		1B453FA52631EABB007D341D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B453FAA2631EABB007D341D /* ExchangeRatesMadeSimpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeRatesMadeSimpleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B453FAE2631EABB007D341D /* ExchangeRatesMadeSimpleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesMadeSimpleTests.swift; sourceTree = "<group>"; };
+		1B453FB02631EABB007D341D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B453FB52631EABB007D341D /* ExchangeRatesMadeSimpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeRatesMadeSimpleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B453FB92631EABB007D341D /* ExchangeRatesMadeSimpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesMadeSimpleUITests.swift; sourceTree = "<group>"; };
+		1B453FBB2631EABB007D341D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B453F912631EAB8007D341D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B453FA72631EABB007D341D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B453FB22631EABB007D341D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B12DD9926368C4F00CA63E0 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				1B12DD9126368B8400CA63E0 /* MainView.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		1B12DD9A26368C5700CA63E0 /* Convert View */ = {
+			isa = PBXGroup;
+			children = (
+				1B1E95642636939C00214002 /* Conversion Item */,
+				1B453F992631EAB8007D341D /* ConvertView.swift */,
+			);
+			path = "Convert View";
+			sourceTree = "<group>";
+		};
+		1B12DD9B26368C5F00CA63E0 /* History View */ = {
+			isa = PBXGroup;
+			children = (
+				1B12DD9C26368C7F00CA63E0 /* HistoryView.swift */,
+			);
+			path = "History View";
+			sourceTree = "<group>";
+		};
+		1B12DDA126368C9500CA63E0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1B12DDA226368CA400CA63E0 /* Tabbable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1B1E95642636939C00214002 /* Conversion Item */ = {
+			isa = PBXGroup;
+			children = (
+				1B1E9565263693B000214002 /* ConversionItem.swift */,
+			);
+			path = "Conversion Item";
+			sourceTree = "<group>";
+		};
+		1B453F8B2631EAB8007D341D = {
+			isa = PBXGroup;
+			children = (
+				1B453F962631EAB8007D341D /* ExchangeRatesMadeSimple */,
+				1B453FAD2631EABB007D341D /* ExchangeRatesMadeSimpleTests */,
+				1B453FB82631EABB007D341D /* ExchangeRatesMadeSimpleUITests */,
+				1B453F952631EAB8007D341D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B453F952631EAB8007D341D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B453F942631EAB8007D341D /* ExchangeRatesMadeSimple.app */,
+				1B453FAA2631EABB007D341D /* ExchangeRatesMadeSimpleTests.xctest */,
+				1B453FB52631EABB007D341D /* ExchangeRatesMadeSimpleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B453F962631EAB8007D341D /* ExchangeRatesMadeSimple */ = {
+			isa = PBXGroup;
+			children = (
+				1B12DDA126368C9500CA63E0 /* Protocols */,
+				1B12DD9B26368C5F00CA63E0 /* History View */,
+				1B12DD9A26368C5700CA63E0 /* Convert View */,
+				1B12DD9926368C4F00CA63E0 /* Main View */,
+				1B453F972631EAB8007D341D /* ExchangeRatesMadeSimpleApp.swift */,
+				1B453F9B2631EABB007D341D /* Assets.xcassets */,
+				1B453FA02631EABB007D341D /* Persistence.swift */,
+				1B453FA52631EABB007D341D /* Info.plist */,
+				1B453FA22631EABB007D341D /* ExchangeRatesMadeSimple.xcdatamodeld */,
+				1B453F9D2631EABB007D341D /* Preview Content */,
+			);
+			path = ExchangeRatesMadeSimple;
+			sourceTree = "<group>";
+		};
+		1B453F9D2631EABB007D341D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1B453F9E2631EABB007D341D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1B453FAD2631EABB007D341D /* ExchangeRatesMadeSimpleTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B453FAE2631EABB007D341D /* ExchangeRatesMadeSimpleTests.swift */,
+				1B453FB02631EABB007D341D /* Info.plist */,
+			);
+			path = ExchangeRatesMadeSimpleTests;
+			sourceTree = "<group>";
+		};
+		1B453FB82631EABB007D341D /* ExchangeRatesMadeSimpleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B453FB92631EABB007D341D /* ExchangeRatesMadeSimpleUITests.swift */,
+				1B453FBB2631EABB007D341D /* Info.plist */,
+			);
+			path = ExchangeRatesMadeSimpleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B453F932631EAB8007D341D /* ExchangeRatesMadeSimple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B453FBE2631EABB007D341D /* Build configuration list for PBXNativeTarget "ExchangeRatesMadeSimple" */;
+			buildPhases = (
+				1B453F902631EAB8007D341D /* Sources */,
+				1B453F912631EAB8007D341D /* Frameworks */,
+				1B453F922631EAB8007D341D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExchangeRatesMadeSimple;
+			productName = ExchangeRatesMadeSimple;
+			productReference = 1B453F942631EAB8007D341D /* ExchangeRatesMadeSimple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B453FA92631EABB007D341D /* ExchangeRatesMadeSimpleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B453FC12631EABB007D341D /* Build configuration list for PBXNativeTarget "ExchangeRatesMadeSimpleTests" */;
+			buildPhases = (
+				1B453FA62631EABB007D341D /* Sources */,
+				1B453FA72631EABB007D341D /* Frameworks */,
+				1B453FA82631EABB007D341D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B453FAC2631EABB007D341D /* PBXTargetDependency */,
+			);
+			name = ExchangeRatesMadeSimpleTests;
+			productName = ExchangeRatesMadeSimpleTests;
+			productReference = 1B453FAA2631EABB007D341D /* ExchangeRatesMadeSimpleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1B453FB42631EABB007D341D /* ExchangeRatesMadeSimpleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B453FC42631EABB007D341D /* Build configuration list for PBXNativeTarget "ExchangeRatesMadeSimpleUITests" */;
+			buildPhases = (
+				1B453FB12631EABB007D341D /* Sources */,
+				1B453FB22631EABB007D341D /* Frameworks */,
+				1B453FB32631EABB007D341D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B453FB72631EABB007D341D /* PBXTargetDependency */,
+			);
+			name = ExchangeRatesMadeSimpleUITests;
+			productName = ExchangeRatesMadeSimpleUITests;
+			productReference = 1B453FB52631EABB007D341D /* ExchangeRatesMadeSimpleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B453F8C2631EAB8007D341D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1B453F932631EAB8007D341D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1B453FA92631EABB007D341D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1B453F932631EAB8007D341D;
+					};
+					1B453FB42631EABB007D341D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1B453F932631EAB8007D341D;
+					};
+				};
+			};
+			buildConfigurationList = 1B453F8F2631EAB8007D341D /* Build configuration list for PBXProject "ExchangeRatesMadeSimple" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B453F8B2631EAB8007D341D;
+			productRefGroup = 1B453F952631EAB8007D341D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B453F932631EAB8007D341D /* ExchangeRatesMadeSimple */,
+				1B453FA92631EABB007D341D /* ExchangeRatesMadeSimpleTests */,
+				1B453FB42631EABB007D341D /* ExchangeRatesMadeSimpleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B453F922631EAB8007D341D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B453F9F2631EABB007D341D /* Preview Assets.xcassets in Resources */,
+				1B453F9C2631EABB007D341D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B453FA82631EABB007D341D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B453FB32631EABB007D341D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B453F902631EAB8007D341D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B453FA12631EABB007D341D /* Persistence.swift in Sources */,
+				1B12DD9D26368C7F00CA63E0 /* HistoryView.swift in Sources */,
+				1B453F9A2631EAB8007D341D /* ConvertView.swift in Sources */,
+				1B453F982631EAB8007D341D /* ExchangeRatesMadeSimpleApp.swift in Sources */,
+				1B1E9566263693B000214002 /* ConversionItem.swift in Sources */,
+				1B12DDA326368CA400CA63E0 /* Tabbable.swift in Sources */,
+				1B12DD9226368B8400CA63E0 /* MainView.swift in Sources */,
+				1B453FA42631EABB007D341D /* ExchangeRatesMadeSimple.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B453FA62631EABB007D341D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B453FAF2631EABB007D341D /* ExchangeRatesMadeSimpleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B453FB12631EABB007D341D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B453FBA2631EABB007D341D /* ExchangeRatesMadeSimpleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B453FAC2631EABB007D341D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B453F932631EAB8007D341D /* ExchangeRatesMadeSimple */;
+			targetProxy = 1B453FAB2631EABB007D341D /* PBXContainerItemProxy */;
+		};
+		1B453FB72631EABB007D341D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B453F932631EAB8007D341D /* ExchangeRatesMadeSimple */;
+			targetProxy = 1B453FB62631EABB007D341D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B453FBC2631EABB007D341D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B453FBD2631EABB007D341D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B453FBF2631EABB007D341D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ExchangeRatesMadeSimple/Preview Content\"";
+				DEVELOPMENT_TEAM = J8GC4H4279;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ExchangeRatesMadeSimple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = silverio.flavio.exchangeratesmadesimple.ExchangeRatesMadeSimple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B453FC02631EABB007D341D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ExchangeRatesMadeSimple/Preview Content\"";
+				DEVELOPMENT_TEAM = J8GC4H4279;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ExchangeRatesMadeSimple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = silverio.flavio.exchangeratesmadesimple.ExchangeRatesMadeSimple;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1B453FC22631EABB007D341D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8GC4H4279;
+				INFOPLIST_FILE = ExchangeRatesMadeSimpleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = silverio.flavio.exchangeratesmadesimple.ExchangeRatesMadeSimpleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangeRatesMadeSimple.app/ExchangeRatesMadeSimple";
+			};
+			name = Debug;
+		};
+		1B453FC32631EABB007D341D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8GC4H4279;
+				INFOPLIST_FILE = ExchangeRatesMadeSimpleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = silverio.flavio.exchangeratesmadesimple.ExchangeRatesMadeSimpleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangeRatesMadeSimple.app/ExchangeRatesMadeSimple";
+			};
+			name = Release;
+		};
+		1B453FC52631EABB007D341D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8GC4H4279;
+				INFOPLIST_FILE = ExchangeRatesMadeSimpleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = silverio.flavio.exchangeratesmadesimple.ExchangeRatesMadeSimpleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ExchangeRatesMadeSimple;
+			};
+			name = Debug;
+		};
+		1B453FC62631EABB007D341D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8GC4H4279;
+				INFOPLIST_FILE = ExchangeRatesMadeSimpleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = silverio.flavio.exchangeratesmadesimple.ExchangeRatesMadeSimpleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ExchangeRatesMadeSimple;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B453F8F2631EAB8007D341D /* Build configuration list for PBXProject "ExchangeRatesMadeSimple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B453FBC2631EABB007D341D /* Debug */,
+				1B453FBD2631EABB007D341D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B453FBE2631EABB007D341D /* Build configuration list for PBXNativeTarget "ExchangeRatesMadeSimple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B453FBF2631EABB007D341D /* Debug */,
+				1B453FC02631EABB007D341D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B453FC12631EABB007D341D /* Build configuration list for PBXNativeTarget "ExchangeRatesMadeSimpleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B453FC22631EABB007D341D /* Debug */,
+				1B453FC32631EABB007D341D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B453FC42631EABB007D341D /* Build configuration list for PBXNativeTarget "ExchangeRatesMadeSimpleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B453FC52631EABB007D341D /* Debug */,
+				1B453FC62631EABB007D341D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B453FA22631EABB007D341D /* ExchangeRatesMadeSimple.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B453FA32631EABB007D341D /* ExchangeRatesMadeSimple.xcdatamodel */,
+			);
+			currentVersion = 1B453FA32631EABB007D341D /* ExchangeRatesMadeSimple.xcdatamodel */;
+			path = ExchangeRatesMadeSimple.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1B453F8C2631EAB8007D341D /* Project object */;
+}
