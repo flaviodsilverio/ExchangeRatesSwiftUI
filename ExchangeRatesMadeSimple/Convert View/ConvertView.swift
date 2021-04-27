@@ -31,16 +31,16 @@ struct ConvertView: View {
                 Spacer().frame(width: 16.0)
             }
 
+            AddCurrencyView()
+
             List {
                 ForEach(configs) { config in
                     ConversionItem(with: config)
                 }
             }
         }
-
     }
 }
-
 
 struct ConvertView_Previews: PreviewProvider {
     static var previews: some View {
