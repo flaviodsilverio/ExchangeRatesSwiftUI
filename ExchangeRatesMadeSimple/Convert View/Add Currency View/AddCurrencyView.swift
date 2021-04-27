@@ -10,16 +10,15 @@ import SwiftUI
 struct AddCurrencyView: View {
     var body: some View {
         HStack {
-            Spacer().frame(width: 16)
-            
-            Button("+") {
+            Button {
 
+            } label: {
+                Text("Title")
+                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .font(Font.largeTitle)
+                    .border(Color.blue)
             }
-            .frame(maxWidth: .infinity, maxHeight: 50)
-            .font(Font.largeTitle)
-            .border(Color.blue)
-
-            Spacer().frame(width: 16)
+            .padding([.leading, .trailing], 16)
         }
     }
 }
