@@ -7,36 +7,60 @@
 
 import SwiftUI
 
+struct ConfigFactory {
+    static func makeConfigs() -> [ConversionItemConfiguration] {
+        return [
+            ConversionItemConfiguration(isEditable: false),
+            ConversionItemConfiguration(isEditable: false),
+            ConversionItemConfiguration(isEditable: false),
+            ConversionItemConfiguration(isEditable: false),
+            ConversionItemConfiguration(isEditable: false),
+            ConversionItemConfiguration(isEditable: false),
+            ConversionItemConfiguration(isEditable: false),
+            ConversionItemConfiguration(isEditable: false),
+            ConversionItemConfiguration(isEditable: false),
+            ConversionItemConfiguration(isEditable: false)
+        ]
+    }
+}
+
 struct ConvertView: View {
-    let configs = [
-        ConversionItemConfiguration(isEditable: false),
-        ConversionItemConfiguration(isEditable: false),
-        ConversionItemConfiguration(isEditable: false),
-        ConversionItemConfiguration(isEditable: false),
-        ConversionItemConfiguration(isEditable: false),
-        ConversionItemConfiguration(isEditable: false),
-        ConversionItemConfiguration(isEditable: false),
-        ConversionItemConfiguration(isEditable: false),
-        ConversionItemConfiguration(isEditable: false),
-        ConversionItemConfiguration(isEditable: false)
-    ]
-
     var body: some View {
-        VStack {
-            Spacer().frame(width: 0.0, height: 20)
+        NavigationView {
 
-            HStack {
-                Spacer().frame(width: 16.0)
-                ConversionItem(with: ConversionItemConfiguration(isEditable: true))
-                Spacer().frame(width: 16.0)
-            }
+            VStack {
+                Spacer().frame(width: 0.0, height: 20)
 
-            AddCurrencyView()
-
-            List {
-                ForEach(configs) { config in
-                    ConversionItem(with: config)
+                HStack {
+                    ConversionItem(with: ConversionItemConfiguration(isEditable: true))
+                        .padding([.trailing, .leading], 16.0)
                 }
+
+                AddCurrencyButtonView()
+
+                List {
+                    ForEach(ConfigFactory.makeConfigs()) { config in
+                        ConversionItem(with: config)
+                    }
+                    .onMove() {
+                        x, y in
+                    }
+                    .onDelete() {
+                        element in
+                    }
+                }.listStyle(PlainListStyle())
+            }
+            .navigationBarTitle("Exchange rates", displayMode: .inline)
+//            .navigationBarHidden(true)
+            .toolbar {
+
+                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading) {
+                                            Button("Help") {
+                                            }
+                    }
+                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
+                        EditButton()
+                    }
             }
         }
     }
