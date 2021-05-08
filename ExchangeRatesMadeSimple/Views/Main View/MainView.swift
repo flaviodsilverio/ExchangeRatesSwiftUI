@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
+    let viewModel = MainViewViewModel()
+    
     var body: some View {
         TabView {
             ConvertView().tabItem {

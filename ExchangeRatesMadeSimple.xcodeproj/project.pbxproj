@@ -21,6 +21,12 @@
 		1B453FA42631EABB007D341D /* ExchangeRatesMadeSimple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B453FA22631EABB007D341D /* ExchangeRatesMadeSimple.xcdatamodeld */; };
 		1B453FAF2631EABB007D341D /* ExchangeRatesMadeSimpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B453FAE2631EABB007D341D /* ExchangeRatesMadeSimpleTests.swift */; };
 		1B453FBA2631EABB007D341D /* ExchangeRatesMadeSimpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B453FB92631EABB007D341D /* ExchangeRatesMadeSimpleUITests.swift */; };
+		1B62BB3D263BD2F8001D3642 /* HelpPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B62BB3C263BD2F8001D3642 /* HelpPageView.swift */; };
+		1B62BB43263BD41B001D3642 /* ShowHelpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B62BB42263BD41B001D3642 /* ShowHelpButton.swift */; };
+		1BBC1C13264670CA008A192E /* RequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC1C12264670CA008A192E /* RequestClient.swift */; };
+		1BBC1C172646718E008A192E /* CurrencyInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC1C162646718E008A192E /* CurrencyInformation.swift */; };
+		1BBC1C1A26467259008A192E /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC1C1926467259008A192E /* MainViewViewModel.swift */; };
+		1BBC1C1E26468683008A192E /* CurrencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC1C1D26468683008A192E /* CurrencyProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +67,12 @@
 		1B453FB52631EABB007D341D /* ExchangeRatesMadeSimpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeRatesMadeSimpleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B453FB92631EABB007D341D /* ExchangeRatesMadeSimpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesMadeSimpleUITests.swift; sourceTree = "<group>"; };
 		1B453FBB2631EABB007D341D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B62BB3C263BD2F8001D3642 /* HelpPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPageView.swift; sourceTree = "<group>"; };
+		1B62BB42263BD41B001D3642 /* ShowHelpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHelpButton.swift; sourceTree = "<group>"; };
+		1BBC1C12264670CA008A192E /* RequestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestClient.swift; sourceTree = "<group>"; };
+		1BBC1C162646718E008A192E /* CurrencyInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyInformation.swift; sourceTree = "<group>"; };
+		1BBC1C1926467259008A192E /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		1BBC1C1D26468683008A192E /* CurrencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 		1B12DD9A26368C5700CA63E0 /* Convert View */ = {
 			isa = PBXGroup;
 			children = (
+				1B62BB41263BD405001D3642 /* Show Help Button View */,
 				1B1E956A2637D9DC00214002 /* Add Currency Button View */,
 				1B1E95642636939C00214002 /* Conversion Item View */,
 				1B453F992631EAB8007D341D /* ConvertView.swift */,
@@ -169,12 +182,12 @@
 		1B453F962631EAB8007D341D /* ExchangeRatesMadeSimple */ = {
 			isa = PBXGroup;
 			children = (
-				1B62BB282639344B001D3642 /* Extensions */,
-				1B1E957926392B8A00214002 /* Add Currency View */,
+				1BBC1C1826467211008A192E /* ViewModels */,
+				1BBC1C1426467127008A192E /* Models */,
+				1BBC1C0F2646707C008A192E /* Networking */,
+				1BBC1C0E26467075008A192E /* Views */,
 				1B12DDA126368C9500CA63E0 /* Protocols */,
-				1B12DD9B26368C5F00CA63E0 /* History View */,
-				1B12DD9A26368C5700CA63E0 /* Convert View */,
-				1B12DD9926368C4F00CA63E0 /* Main View */,
+				1B62BB282639344B001D3642 /* Extensions */,
 				1B453F972631EAB8007D341D /* ExchangeRatesMadeSimpleApp.swift */,
 				1B453F9B2631EABB007D341D /* Assets.xcassets */,
 				1B453FA02631EABB007D341D /* Persistence.swift */,
@@ -216,6 +229,91 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B62BB3B263BD2DD001D3642 /* Help View */ = {
+			isa = PBXGroup;
+			children = (
+				1B62BB3C263BD2F8001D3642 /* HelpPageView.swift */,
+			);
+			path = "Help View";
+			sourceTree = "<group>";
+		};
+		1B62BB41263BD405001D3642 /* Show Help Button View */ = {
+			isa = PBXGroup;
+			children = (
+				1B62BB42263BD41B001D3642 /* ShowHelpButton.swift */,
+			);
+			path = "Show Help Button View";
+			sourceTree = "<group>";
+		};
+		1BBC1C0E26467075008A192E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B12DD9926368C4F00CA63E0 /* Main View */,
+				1B12DD9A26368C5700CA63E0 /* Convert View */,
+				1B12DD9B26368C5F00CA63E0 /* History View */,
+				1B1E957926392B8A00214002 /* Add Currency View */,
+				1B62BB3B263BD2DD001D3642 /* Help View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1BBC1C0F2646707C008A192E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC1C1C2646866E008A192E /* Providers */,
+				1BBC1C1126467093008A192E /* Request Client */,
+				1BBC1C1026467084008A192E /* Request Manager */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1BBC1C1026467084008A192E /* Request Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Request Manager";
+			sourceTree = "<group>";
+		};
+		1BBC1C1126467093008A192E /* Request Client */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC1C12264670CA008A192E /* RequestClient.swift */,
+			);
+			path = "Request Client";
+			sourceTree = "<group>";
+		};
+		1BBC1C1426467127008A192E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC1C1526467172008A192E /* Networking */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1BBC1C1526467172008A192E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC1C162646718E008A192E /* CurrencyInformation.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1BBC1C1826467211008A192E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC1C1926467259008A192E /* MainViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1BBC1C1C2646866E008A192E /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC1C1D26468683008A192E /* CurrencyProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,13 +448,19 @@
 				1B453FA12631EABB007D341D /* Persistence.swift in Sources */,
 				1B12DD9D26368C7F00CA63E0 /* HistoryView.swift in Sources */,
 				1B1E956F2637D9FE00214002 /* AddCurrencyButtonView.swift in Sources */,
+				1B62BB3D263BD2F8001D3642 /* HelpPageView.swift in Sources */,
 				1B453F9A2631EAB8007D341D /* ConvertView.swift in Sources */,
+				1B62BB43263BD41B001D3642 /* ShowHelpButton.swift in Sources */,
 				1B453F982631EAB8007D341D /* ExchangeRatesMadeSimpleApp.swift in Sources */,
+				1BBC1C1E26468683008A192E /* CurrencyProvider.swift in Sources */,
 				1B1E957B26392B9D00214002 /* AddCurrencyView.swift in Sources */,
+				1BBC1C1A26467259008A192E /* MainViewViewModel.swift in Sources */,
 				1B1E9566263693B000214002 /* ConversionItem.swift in Sources */,
 				1B12DDA326368CA400CA63E0 /* Tabbable.swift in Sources */,
+				1BBC1C172646718E008A192E /* CurrencyInformation.swift in Sources */,
 				1B12DD9226368B8400CA63E0 /* MainView.swift in Sources */,
 				1B453FA42631EABB007D341D /* ExchangeRatesMadeSimple.xcdatamodeld in Sources */,
+				1BBC1C13264670CA008A192E /* RequestClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

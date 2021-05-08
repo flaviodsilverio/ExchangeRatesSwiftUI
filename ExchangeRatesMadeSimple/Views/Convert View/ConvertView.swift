@@ -51,16 +51,15 @@ struct ConvertView: View {
                 }.listStyle(PlainListStyle())
             }
             .navigationBarTitle("Exchange rates", displayMode: .inline)
-//            .navigationBarHidden(true)
+            //            .navigationBarHidden(true)
             .toolbar {
 
-                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading) {
-                                            Button("Help") {
-                                            }
-                    }
-                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
-                        EditButton()
-                    }
+                ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading) {
+                    ShowHelpButton()
+                }
+                ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
+                    EditButton()
+                }
             }
         }
     }
