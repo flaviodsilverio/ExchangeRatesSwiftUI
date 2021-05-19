@@ -28,12 +28,12 @@ struct CurrencyProvider: CurrencyProvidable {
 }
 
 protocol ImageProvidable {
-    func imageFrom(url: URL) -> AnyPublisher<Data, Error>
+    func publisherForImage(from url: URL) -> AnyPublisher<Data, Error>
 }
 
 struct ImageProvider: ImageProvidable {
-    func imageFrom(url: URL) -> AnyPublisher<Data, Error> {
-        requestClient.make(URLRequest(url: url))
+    func publisherForImage(from url: URL) -> AnyPublisher<Data, Error> {
+        return requestClient.make(URLRequest(url: url))
     }
 
     private let requestClient: Requestable
